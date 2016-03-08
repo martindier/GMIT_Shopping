@@ -22,62 +22,24 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ">
-
+ 
+<body>
+    <ion-header-bar class="bar-stable">
+        <h1 class="title">Title</h1>
+    </ion-header-bar>
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-      <div class="bar bar-header bar-energized">
-  <h1 class="title">My Shopping</h1>
-</div>
-
-<!--style sheet link .css-->
-<link href="style.css" rel="stylesheet">
-
-
-<div class="bar bar-subheader">
-  <h2 class="title">Total</h2>
-</div>
-<p>This is test text</p>>
-
-<!--LISTS-->
-<div class="list">
-       <ul>
-    <!--<li class="item">-->
-      <li<a href="">Bread</a></li>
-      <li>Milk</li>
-      <li>Jam</li>
-      <li>Butter</li>
-    </li>
-</ul>
-</div>>
-<!--dividers-->
-
-
-<div class="list">
-
-  <div class="item item-divider">
-    Candy Bars
-  </div>
-
- <!-- buttons right-->
-  <div class="list">
-
-  <div class="item item-button-right">
-    test text here
-    <button class="button button-positive">
-      <i class="icon ion-ios-telephone"></i>
-    </button>
-  </div>
-
-  ...
-
-</div>
-
-
-        <h1 class="title">My Shopping</h1>
-      </ion-header-bar>
-      <ion-content>
-      </ion-content>
+        <ion-content>
+            <p id="total">Total: 10.50 </p>
+            <ion-list>
+                <ion-item>
+                    Milk (1l)
+                    <button class="button button-positive">€0.85</button>
+                </ion-item>
+            </ion-list>
+        </ion-content>
     </ion-pane>
-  </body>
+</body>
+
+
+
 </html>
