@@ -1,0 +1,12 @@
+/* style for dividers 
+#list li{<div>class="item item-divider">
+    Candy Bars
+  </div>
+}*/
+
+.list ul li a {
+display: block;
+padding: .5em;
+border: 1px solid #ba89a8; border-radius: .5em; margin: .25em;
+color:red;
+}
