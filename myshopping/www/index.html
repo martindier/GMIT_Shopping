@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="starter>
-
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -22,23 +21,23 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
- 
-<body>
-    <ion-header-bar class="bar-stable">
-        <h1 class="title">Title</h1>
-    </ion-header-bar>
+  <body ng-app="starter">
+    <ion-header-bar class="bar bar-header bar-energized">
+        <p id="total">Total: 10.50 </p>
+    </ion-header-bar> 
     <ion-pane>
-        <ion-content>
-            <p id="total">Total: 10.50 </p>
-            <ion-list>
-                <ion-item>
+        <ion-content class="has-header">
+            
+            <ion-list can-swipe="true">
+                <ion-item class="item-button-right item-avatar">
                 <img src="img/milk_1L.png" alt="Milk (1l)">
                     Milk (1l)
                     <button class="button button-positive">€0.85</button>
                 </ion-item>
             </ion-list>
             <ion-list>
-                <ion-item>
+             
+                <ion-item class="item-button-right item-avatar">
                 <img src="img/milk_2L.png" alt=" Milk (2l)">
                     Milk (2l)
                     <button class="button button-positive">€1.45</button>
@@ -46,22 +45,22 @@
             </ion-list>
             <ion-list>
 
-                <ion-item>
+                <ion-item class="item-button-right item-avatar">
                     <img src="img/bread_sl-brown.png" alt="Bread_Brown">
                     Bread_Brown
 
                     <button class="button button-positive">€0.85</button>
                 </ion-item>
-            </ion-list>
+           </ion-list>
             <ion-list>
-                <ion-item>
+                <ion-item class="item-button-right item-avatar">
                 <img src="img/bread_sl-white.png" alt="White Sliced Bread">
                     White Sliced Bread
                     <button class="button button-positive">€0.85</button>
                 </ion-item>
             </ion-list>
             <ion-list>
-                <ion-item>
+               <ion-item class="item-button-right item-avatar">
                 <img src="img/milk_2L" alt="Milk (2l)">
                     Milk (2l)
                     <button class="button button-positive">€0.85</button>
@@ -70,8 +69,5 @@
 
         </ion-content>
     </ion-pane>
-</body>
-
-
-
+  </body>
 </html>
