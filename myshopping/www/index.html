@@ -40,31 +40,31 @@
              
                 <ion-item class="item-button-right item-avatar">
                 <img src="img/milk_2L.png" alt=" Milk (2l)">
-                    Milk (2l)
-                    <button class="button button-positive">€1.45</button>
+                    {{items[1].name}}
+                    <button class="button button-positive">{{items[1].price}}</button>
                 </ion-item>
             </ion-list>
             <ion-list>
 
                 <ion-item class="item-button-right item-avatar">
                     <img src="img/bread_sl-brown.png" alt="Bread_Brown">
-                    Brown Bread
+                    {{items[2].name}}
 
-                    <button class="button button-positive">€0.85</button>
+                    <button class="button button-positive">{{items[2].price}}</button>
                 </ion-item>
            </ion-list>
             <ion-list>
                 <ion-item class="item-button-right item-avatar">
                 <img src="img/bread_sl-white.png" alt="White Sliced Bread">
-                    White Sliced Bread
-                    <button class="button button-positive">€0.85</button>
+                    {{items[3].name}}
+                    <button class="button button-positive">{{items[4].price}}</button>
                 </ion-item>
             </ion-list>
             <ion-list>
                <ion-item class="item-button-right item-avatar">
                 <img src="img/tea_40bags.png" alt="tea bags">
-                    Tea Bags
-                    <button class="button button-positive">€2.85</button>
+                    {{items[4].name}}
+                    <button class="button button-positive">{{items[4].price | currency: "€"}}</button>
                 </ion-item>
             </ion-list>
 
