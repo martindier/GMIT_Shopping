@@ -35,7 +35,8 @@
                 <img src="img/milk_1L.png" alt="Milk (1l)">
                     {{items[0].name}}
                     <button class="button button-positive" ng-click="addItem(items[0])">{{items[0].price | currency: "€"}}</button>
-                    <ion-option-button class="button-light icon ion-minus-circled" ng-click="removeItem(items[0])"></ion-option-button>
+                    <ion-option-button class="button-light icon ion-minus-circled" ng-click="removeItem(items[0])"> </ion-option-button>
+                    <ion-option-button> <a class="button button-icon icon ion-android-settings" ng-click="priceChange(items[0].price)"></a></ion-option-button>
                 </ion-item>
             </ion-list>
             <ion-list>

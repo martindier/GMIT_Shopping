@@ -32,4 +32,16 @@ angular.module('ionicApp', ['ionic'])
 		console.log("\n cartItem.qty : " + cartItem.qty);
 	}
 
+$scope.priceChange=function(cartItem){
+cartItem.price=cartItem.newPrice
+console.log("\n cartItem.price: " + cartItem.price)
+console.log("\n cartItem.newprice: " + cartItem.newPrice);
+}
+
+
+
+
+
 });
+
+
