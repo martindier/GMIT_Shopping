@@ -25,10 +25,11 @@ angular.module('ionicApp', ['ionic'])
 	 	//console.log("item[0].qty is : " + $scope.items[0].qty); // WOW IT'S REFERENCED BACK
 	}
 	$scope.removeItem = function (cartItem) {
+		if(cartItem.qty>0){
 		$scope.total_cart = $scope.total_cart - cartItem.price;
-		cartItem.qty = cartItem.qty - 1; //  or cartItem.qty--;
+		cartItem.qty = cartItem.qty - 1;}
+		else{alert("This Item is no longer in your basket!");} //  or cartItem.qty--;
 		console.log("\n cartItem.qty : " + cartItem.qty);
 	}
 
 });
-
