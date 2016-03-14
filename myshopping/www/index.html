@@ -25,7 +25,7 @@
   </head>
   <body ng-controller="CalcCtrl">
     <ion-header-bar class="bar bar-header bar-energized">
-        <p id="total">{{total}} </p>
+        <p id="total">Total: {{total_cart | currency: "€ "}} </p>
     </ion-header-bar> 
     <ion-pane>
         <ion-content class="has-header">
@@ -34,7 +34,8 @@
                 <ion-item class="item-button-right item-avatar">
                 <img src="img/milk_1L.png" alt="Milk (1l)">
                     {{items[0].name}}
-                    <button class="button button-positive">{{items[0].price | currency: "€"}}</button>
+                    <button class="button button-positive" ng-click="addItem(items[0])">{{items[0].price | currency: "€"}}</button>
+                    <ion-option-button class="button-light icon ion-minus-circled" ng-click="removeItem(items[0])"></ion-option-button>
                 </ion-item>
             </ion-list>
             <ion-list>
@@ -42,7 +43,7 @@
                 <ion-item class="item-button-right item-avatar">
                 <img src="img/milk_2L.png" alt=" Milk (2l)">
                     {{items[1].name}}
-                    <button class="button button-positive">{{items[1].price | currency: "€"}}</button>
+                    <button class="button button-positive"  ng-click="addItem(items[1])">{{items[1].price | currency: "€"}}</button>
                 </ion-item>
             </ion-list>
             <ion-list>

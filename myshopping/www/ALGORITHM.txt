@@ -23,8 +23,10 @@ PROCESS calculateBasketTotal
 ENDPROCESS
 
 WHEN swipe removeButton DO
+  IF item_qty > 0 THEN
 	SUBTRACT item_price to cart_total
 	SUBTRACT 1 to item_qty
+  ENDIF
 ENDDO
 
 WHEN swipe change_price_Button DO
