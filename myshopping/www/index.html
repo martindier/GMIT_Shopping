@@ -7,6 +7,7 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!--<script> background-colour:blue</script>-->
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -33,7 +34,7 @@
                 <ion-item class="item-button-right item-avatar">
                 <img src="img/milk_1L.png" alt="Milk (1l)">
                     {{items[0].name}}
-                    <button class="button button-positive">{{items[0].price}}</button>
+                    <button class="button button-positive">{{items[0].price | currency: "€"}}</button>
                 </ion-item>
             </ion-list>
             <ion-list>
@@ -41,7 +42,7 @@
                 <ion-item class="item-button-right item-avatar">
                 <img src="img/milk_2L.png" alt=" Milk (2l)">
                     {{items[1].name}}
-                    <button class="button button-positive">{{items[1].price}}</button>
+                    <button class="button button-positive">{{items[1].price | currency: "€"}}</button>
                 </ion-item>
             </ion-list>
             <ion-list>
@@ -50,14 +51,14 @@
                     <img src="img/bread_sl-brown.png" alt="Bread_Brown">
                     {{items[2].name}}
 
-                    <button class="button button-positive">{{items[2].price}}</button>
+                    <button class="button button-positive">{{items[2].price | currency: "€"}}</button>
                 </ion-item>
            </ion-list>
             <ion-list>
                 <ion-item class="item-button-right item-avatar">
                 <img src="img/bread_sl-white.png" alt="White Sliced Bread">
                     {{items[3].name}}
-                    <button class="button button-positive">{{items[4].price}}</button>
+                    <button class="button button-positive">{{items[3].price | currency: "€"}}</button>
                 </ion-item>
             </ion-list>
             <ion-list>

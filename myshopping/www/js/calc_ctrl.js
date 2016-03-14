@@ -11,8 +11,7 @@ $scope.items = [
   {name: "Sliced Loaf (White)", price:0.80 },
   {name: "Tea Bags (80)", price:2.05 }];
 
-  $scope.total=77;
-
-
+ 
+  {$scope.total="Total: ";};
 });
 
