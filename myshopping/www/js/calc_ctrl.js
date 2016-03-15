@@ -1,6 +1,6 @@
 // on button press add item value to running total on button swipe minus item value from running total
 
-angular.module('ionicApp', ['ionic'])
+angular.module('starter', ['ionic'])
 
 .controller('CalcCtrl', function($scope) {
 
