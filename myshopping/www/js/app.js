@@ -30,7 +30,17 @@ $stateProvider.state('tab',{
     url:"/tab",
     abstract:true,    
     templateUrl: 'templates/tab.html'
-  });
+  }.state("tab.calculator",{
+    url:"/home",
+    views: {"tab-calculator":{templateUrl:"templates/calculator.html"}}
+  }).state("tab.basket",{
+    url:"/basket",
+    views: {"tab-basket":{templateUrl:"templates/basket.html"}}
+  })
+
+
+  );
+
 
 $urlRouterProvider.otherwise("/tab");
 
