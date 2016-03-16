@@ -19,6 +19,9 @@
                   <img src="img/milk_2L.png" alt=" Milk (2l)"> {{items[1].name}}
                   <button class="button button-positive" ng-click="addItem(items[1])">{{items[1].price | currency: "€"}}</button>
                   <ion-option-button class="button-light icon ion-minus-circled" ng-click="removeItem(items[1])"></ion-option-button>
+                   <ion-option-button>
+                      <a class="button button-icon icon ion-android-settings" ng-click="priceChange(items[0].price)"></a>
+                  </ion-option-button>
               </ion-item>
           </ion-list>
           <ion-list>
@@ -26,6 +29,9 @@
                   <img src="img/bread_sl-brown.png" alt="Bread_Brown"> {{items[2].name}}
                   <button class="button button-positive" ng-click="addItem(items[2])">{{items[2].price | currency: "€"}}</button>
                   <ion-option-button class="button-light icon ion-minus-circled" ng-click="removeItem(items[2])"></ion-option-button>
+                   <ion-option-button>
+                      <a class="button button-icon icon ion-android-settings" ng-click="priceChange(items[0].price)"></a>
+                  </ion-option-button>
               </ion-item>
           </ion-list>
           <ion-list>
@@ -33,13 +39,19 @@
                   <img src="img/bread_sl-white.png" alt="White Sliced Bread"> {{items[3].name}}
                   <button class="button button-positive" ng-click="addItem(items[3])">{{items[3].price | currency: "€"}}</button>
                   <ion-option-button class="button-light icon ion-minus-circled" ng-click="removeItem(items[3])"></ion-option-button>
-              </ion-item>
+                   <ion-option-button>
+                      <a class="button button-icon icon ion-android-settings" ng-click="priceChange(items[0].price)"></a>
+                  </ion-option-button>              
+                </ion-item>
           </ion-list>
           <ion-list>
               <ion-item class="item-button-right item-avatar">
                   <img src="img/tea_40bags.png" alt="tea bags"> {{items[4].name}}
                   <button class="button button-positive" ng-click="addItem(items[4])">{{items[4].price | currency: "€"}}</button>
                   <ion-option-button class="button-light icon ion-minus-circled" ng-click="removeItem(items[4])"></ion-option-button>
+                   <ion-option-button>
+                      <a class="button button-icon icon ion-android-settings" ng-click="priceChange(items[0].price)"></a>
+                  </ion-option-button>
               </ion-item>
           </ion-list>
   </ion-content>

@@ -36,21 +36,9 @@ WHEN swipe change_price_Button DO
 	DO PROCESS calculateBasketTotal
 ENDDO
 
-code for icon button insertion...add"ion-android-settings" as the prefered icon
-
-<a class="button button-icon icon ion-settings"></a>
- <a class="button button-icon icon ion-android-settings"></a>
 
 
 Page 2 thumbnail list of pictures
-div class="list">
 
-    <a class="item item-thumbnail-left" href="#">
-      <img src="cover.jpg">
-      <h2>Pretty Hate Machine</h2>
-      <p>Nine Inch Nails</p>
-    </a>
-
-    ...
 
 </div>
