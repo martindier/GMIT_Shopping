@@ -32,6 +32,7 @@ ENDDO
 WHEN swipe change_price_Button DO
 	READ new_price
 	READ item
+new text item
 	SET item_price to new_price
 	DO PROCESS calculateBasketTotal
 ENDDO
