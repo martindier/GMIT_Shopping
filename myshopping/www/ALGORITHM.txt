@@ -27,7 +27,7 @@ WHEN swipe removeButton DO
 	SUBTRACT item_price to cart_total
 	SUBTRACT 1 to item_qty
   ENDIF
-ENDDO
+ENDDO Martin was here
 
 WHEN swipe change_price_Button DO
 	READ new_price
