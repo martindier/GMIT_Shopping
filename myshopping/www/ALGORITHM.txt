@@ -1,14 +1,14 @@
 var cart_total=0;
 
 var item_name="Milk(1l)";
-var item_price=0.85; 
+var item_price=0.86; // CatGsmith was here!
 var item_qty=0;
 
 var basket; //array of items
 
 READ item_name, item_price, item_qty, cart_total, basket
 
-WHEN onclick addButton DO
+WHEN onclick addButton DO // CatGsmith was here!
 	ADD item_price to cart_total
 	ADD 1 to item_qty
 ENDDO
@@ -27,6 +27,7 @@ WHEN swipe removeButton DO
 	SUBTRACT item_price to cart_total
 	SUBTRACT 1 to item_qty
   ENDIF
+
 ENDDO Martin was here
 
 WHEN swipe change_price_Button DO
